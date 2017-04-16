@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>图书信息管理网</title>
+		<!--以下是网站的css部分-->
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/introduction.css" />
+		<link rel="stylesheet" href="css/daterangepicker.min.css" />
+	</head>
+
+	<body>
+		<!--异步获取的头部内容-->
+		<header id='header'></header>
+		<!--通栏图片-->
+		<img id='nav_bg' src='images/introduction/ABUIABACGAAgpLWzuwUon7y70gMwgA84-AI.jpg' alt="" />
+		<!--主体版块-->
+		<div id="search">
+			<span class="lf">用户名：<em>未登录，请先去个人中心<a href="rent.html">登录</a></em></span>
+			<label for="search">请输入您想借阅的书:</label>
+			<input type="text" name="q">
+			<input class="button" type="submit" value="Search">
+		</div>
+		<section id="main">
+			<!--搜寻结果-->
+			<ul class="major" style='display:block'></ul>
+			<div id="logined" style='display: none'>
+					<p class="main_tabs"><span>借书架</span></p>
+					<table>
+						<thead>
+							<tr>
+								<th>书名</th>
+								<th>库存 ：本</th>
+								<th>最多借阅天数</th>
+								<th>书籍位置</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+						<tfoot>
+							<tr>
+								<td colspan="3" style="text-align:right">总借书（本）</td>
+								<td colspan='3'></td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			<!--对应此处 是 没有收到任何数据 的情况-->
+			<div class="noSearch" style='display：block'>
+				<img src="images/introduction/service.png" alt="" width='200px' height='200px'/>
+				<h2>暂未查询到相关数据，请搜索后继续查看 ~~</h2>
+			</div>		
+		</section>
+		
+		<div id='sroll_bg'>
+			<h2>精品推荐</h2>
+			<p></p>
+		</div>
+		<!--异步获取的底部 内容-->
+		<footer id='footer'></footer>
+		<!--以下是网站的JS代码部分-->
+		<script src='js/moment.min.js'></script>
+		<script src="js/jquery-3.1.0.js"></script>
+		<script src="js/common.js"></script>
+		<script src='js/jquery.daterangepicker.min.js'></script>
+		<script src='js/introduction.js'></script>
+	</body>
+
+</html>

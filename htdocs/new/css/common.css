@@ -1,0 +1,176 @@
+/*测试属性*/
+/*header,nav,footer,section,#top_main,#banner{
+	border:1px solid black;
+}*/
+/*-------------------------------通用样式--------------------------*/
+*{
+	margin:0px;
+	padding:0px;
+	letter-spacing:0.5px;
+}
+body{
+	font:12px "microsoft yahei",Arial,Helvetica,sans-serif;
+	color:#666;
+}
+ul,ol,p,h1,h2,h3,h4,h5,h6,dl,dt,dd{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+li{
+	cursor:pointer;
+}
+input{
+	border:none;
+}
+a{
+	color:#666;
+	text-decoration:none;
+}
+a:hover{
+	color:#ff0700;
+	text-decoration:underline;
+}
+.lf{float:left;}
+.rf{float:right;}
+.clear{clear:both;}
+img{
+	vertical-align:bottom;
+}
+
+
+/*头部 内容部分*/
+header #header_top{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	box-sizing:border-box;
+	padding:0px 50px;
+	overflow:hidden;
+	margin:0 auto;
+	background-image:linear-gradient(to bottom,#f6f6f6,#dcdcdc);
+	border-bottom:2px solid #999;
+}
+#header_top ul{
+	overflow:hidden;
+}
+#header_top li{
+	float:left;
+	padding:2px 15px;
+}
+#header_top li a{
+	color:#000;
+	font-size:16px;
+	cursor:pointer;
+}
+#header_top ul li{
+	display:inline-block;
+	height:30px;
+	float:left;
+}
+#header img{
+	/*padding:0px 15px 2px;*/
+}
+#header #logo{
+	float:left;
+}
+#logo>img{
+	height:100px;
+}
+#header #title{
+	height:90px;	
+}
+
+#nav{
+	display:inline-block;
+	overflow:hidden;
+	margin:50px auto 0px;
+}
+#nav>li{
+	display:inline-block;
+	padding:0px 20px;
+	text-align:center;
+	border-right:3px solid #e1e1e1;
+	width:185px;
+	box-sizing:border-box;
+}
+#nav>li:last-child{
+	border:0px;
+}
+#nav>li>a{
+	font-weight:bold;
+	font-size:20px;
+	color:#000;
+	text-decoration: none;
+}
+#header_nav{
+	width:1300px;
+	margin:0 auto;
+	overflow:hidden;
+}
+#header_nav>b{
+	color:#FF0700;
+	font-size:40px;
+	text-align:center;
+	font-family:"arial rounded mt bold";
+}
+#nav_bg{
+	width:100%;
+	height:350px;
+	margin-top:20px;
+}
+section{
+	width:1200px;
+	margin:0 auto;
+}
+
+/*返回顶部的显示效果*/
+.return_top{
+	position:fixed;
+	right:0;
+	top:500px;
+	width:30px;
+	height:100px;
+	background: url(../images/common/5-120601155S3-50.gif) no-repeat 0px 0px ;
+	opacity: 0.5;
+}
+.return_top:hover{
+	background: url(../images/common/5-120601155S3-50.gif) no-repeat 0px -100px ;
+	opacity: 1;
+}
+footer{
+	/*position:relative;*/
+	background:#282828;
+	box-sizing:border-box;
+	height:150px;
+	color:#fff;
+	line-height:30px;
+	font-size:15px;
+	width:100%;
+	padding:30px 0px 25px 20px;
+	overflow:hidden;
+}
+#footer>p{
+	display:inline-block;
+}
+#footer>img{
+	height:100px;
+	float:right;
+	margin-right:200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>图书信息管理网</title>
+		<!--以下是网站的css部分-->
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/rent.css" />
+	</head>
+
+	<body>
+		<!--异步获取的头部内容-->
+		<header id='header'></header>
+		<!--登录注册页面-->
+		<div id="video" style='display:block'>
+			<video src="images/rent/homepage-hero-video.mp4" autoplay loop></video>
+			<div id="register" style='display:none'>
+				<fieldset>
+					<legend>用户注册页面</legend>
+					<form action="" id="regester">
+						<!--用户名-->
+						<div class="form">
+							<b><label for='userName'>姓名：</label></b>
+							<input type="text" name="userName" id='userName' placeholder='请输入真实姓名' required minlength='8' maxlength='16' autofocus />
+							<span>请输入真实姓名</span>
+						</div>
+						<!--密码-->
+						<div class="form">
+							<b><label for='userPwd'>密码：</label></b>
+							<input type="password" id='userpwd' name="pwd" placeholder='请输入密码' required minlength='8' maxlength='16' pattern='^[0-9A-Za-z]{8,16}$' />
+							<span>请输入8到16位数字或大小字母</span>
+						</div>
+						<!--学号-->
+						<div class="form">
+							<b><label for="studentID">学号：</label></b>
+							<input type="type" id='studentID' name="userID"  placeholder='请输入学号' required/>
+							<span>请输入您的学籍学号</span>
+						</div>
+						<!--身份证号-->
+						<div class="form">
+							<b><label for='userNum'>身份证号：</label></b>
+							<input type="text" id='userNum' name="IDCart" placeholder='请输入身份证号' minlength='18' maxlength='18' pattern='^[1-9]{1}[0-9]{14}$|^[1-9]{1}[0-9]{16}([0-9]|[xX])$' required/>
+							<span>请输入你的身份证(必填)</span>
+						</div>
+						<!--联系方式-->
+						<div class="form">
+							<b><label for='userTel'>电话号码：</label></b>
+							<input type="tel" id='userTel' name="userPhone" placeholder='请输入联系方式' required pattern='^1[34578]\d{9}$' maxlength='11'/>
+							<span>请输入您的联系方式（必填）</span>
+						</div>
+						<!--注册按钮-->
+						<div class="form">
+							<b></b>
+							<div class='button' id='registerBtn' style='display: inline-block;box-sizing: border-box;'>注册</div>
+						</div>
+					</form>
+				</fieldset>
+			</div>
+			
+			<div id="login" style='display:block'>
+				<fieldset>
+					<legend>用户登录页面</legend>
+					<form action="" id="loginForm">
+						<!--学号-->
+						<div class="form">
+							<b><label for="loginStudentID">账号：</label></b>
+							<input type="type" name="userID" id='loginStudentID' placeholder='请输入学号' required multiple autofocus/>
+							<span>请输入您的学籍学号或管理员账号</span>
+						</div>
+						<!--密码-->
+						<div class="form">
+							<b><label for='loginUserPwd'>密码：</label></b>
+							<input type="password" id='loginUserPwd' name="pwd" placeholder='请输入密码' required minlength='6' maxlength='12' pattern='^\d{6,12}$'/>
+							<span>请输入6到12位数字</span>
+						</div>
+						<!--注册按钮-->
+						<div class="form">
+							<b></b>
+							<a href='javascript:;' id='loginRegister'>一键注册</a>
+						</div>
+						<!--登录按钮-->
+						<div class="form">
+							<b></b>
+							<div class='button' id='loginBtn' style='display: inline-block;box-sizing: border-box;'>登录</div>
+						</div>
+					</form>
+				</fieldset>
+			</div>
+			
+		</div>
+
+		<!--通栏图片-->
+		<div id='userContent' style='display:none'>
+			<img id='nav_bg' src='images/rent/ABUIABACGAAg4bWzuwUoxuTb8AUwgA84-AI.jpg' alt="" />
+			<!--主体版块-->
+			<section>
+				<ul id="choose1" class="lf"></ul>
+				<div class="scroll">
+					<div id="userInfo1">
+						<select name="" id="">
+							<option value="">请输入检索的用户信息类型</option>
+							<option value="userID">学号</option>
+							<option value="userName">姓名</option>
+							<option value="IDCart">身份号</option>
+							<option value="userPhone">手机号</option>
+						</select>
+						<input type="text" id="searchUser"/>
+						<button>检索</button>
+						<table style="margin-top:20px">
+							<thead>
+								<tr>
+									<td>学号 </td>
+									<td>用户名</td>
+									<td>身份证号</td>
+									<td>密码</td>
+									<td>手机号</td>
+									<td>身份</td>
+									<td>操作</td>
+								</tr>
+							</thead>
+						</table>
+						<div style="max-height:400px;overflow-y:auto;">
+							<table class="tableText"><tbody></tbody></table>
+						</div>
+						
+					</div>
+					<div id="userInfo2">
+						<div class="infor">
+							<b>原密码：</b>
+							<input type="password" id="changePwd1" placeholder='请输入原密码'/>	
+						</div>
+						<div class="infor">
+							<b>新密码：</b>
+							<input type="password" id="changePwd2" placeholder='请输入8到16位数字或大小字母'/>
+						</div>
+						<div class="infor">
+							<b>请再次输入：</b>
+							<input type="password" id="changePwd3" placeholder='请输入8到16位数字或大小字母'/>	
+						</div>
+						<div class="infor">
+							<b></b>
+							<button>修改</button>	
+						</div>
+					</div>
+					<div id="userInfo3">
+						<table>
+							<thead>
+								<tr>
+									<td>id</td>
+									<td>书名</td>
+									<td>书籍描述</td>
+									<td>是否推荐</td>
+								</tr>
+							</thead>
+						</table>
+						<div style="max-height:400px;overflow-y:auto;">
+							<table class="tableText"><tbody></tbody></table>
+						</div>
+					</div>
+					<div id="userInfo4">
+						<table>
+							<thead>
+								<tr>
+									<td>id</td>
+									<td>留言内容</td>
+									<td>是否推荐</td>
+								</tr>
+							</thead>
+						</table>
+						<div style="max-height:400px;overflow-y:auto;">
+							<table class="tableText"><tbody></tbody></table>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+		</div>
+
+		<!--异步获取的底部 内容-->
+		<footer id='footer'></footer>
+		<!--以下是网站的JS代码部分-->
+		<script src="js/jquery-3.1.0.js"></script>
+		<script src="js/common.js"></script>
+		<script src='js/rent.js'></script>
+	</body>
+
+</html>

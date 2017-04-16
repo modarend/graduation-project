@@ -1,0 +1,171 @@
+#nav li:first-child a{
+	color:#FF0700;
+	font-size:30px;
+}
+#pic,#bookShow{
+	overflow:hidden;
+}
+#pic>h2,#bookShow>h2,#bottom>h2{
+	text-align:center;
+	line-height:40px;
+	font-size:20px;
+	margin-top:20px;
+}
+#pic>p,#bookShow>p,#bottom>p{
+	background:url(../images/index/title_1.png);
+	margin:0px auto;
+	width:450px;
+	height:50px;
+}
+#pic li{
+	float:left;
+	width:33%;
+	box-sizing:border-box;
+	padding:10px;
+	text-align:center;
+	height:290px;
+}
+#pic li img{
+	width:300px;
+	height:250px;
+	vertical-align:middle;
+}
+#bookShow{
+	width:100%;
+	overflow:hidden;
+}
+#bookShow>ul.lf{
+	width:300px;
+	padding-left:50px;
+}
+#bookShow>ul.lf>li{
+	box-sizing: border-box;
+	font-size:15px;
+	line-height:40px;
+	height:40px;
+	border:1px solid #ddd;
+	border-radius:15px;
+	overflow:hidden;
+	padding:0px 10px 0px;
+	margin-right:20px;
+}
+#bookShow>ul ul{
+	margin:10px 0px 10px 20px;
+}
+#bookShow>ul.lf>li i{
+	line-height:30px;
+	display:inline-block;
+	width:16px;
+	height:16px;
+	margin:12px 0px;
+	background: url(../images/index/control-270.png) no-repeat;
+	-webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transition: .2s;
+            transition: .2s;
+}
+#bookShow>ul.lf>li i.clicked{
+	-webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+#bookShow>div{
+	width:100%;
+	padding-left:350px;
+}
+#bookShow>div h4{
+	margin-top:10px;
+}
+#express li {
+	height: 25px;
+	border-bottom: dashed 1px #999;
+	line-height: 20px;
+	font-size: 12px;
+	margin-left:40px;
+	width:100%;
+	overflow: hidden;
+	white-space:nowrap;/*禁止换行*/
+	text-overflow:ellipsis;/*省略号显示*/
+}
+
+#demo {
+	height: 200px;
+	overflow: hidden;
+	margin-top: 0px;
+}
+
+#book_class {
+	width: 100%;
+	height: 205px;
+	margin: 20px auto 30px;
+}
+
+#book_class>h3{
+	border-bottom:2px solid #ddd;
+	margin-bottom:10px;
+	text-align: right;
+}
+#bottom{
+	width:100%;
+	overflow:hidden;
+}
+
+#chaining{
+	width:50%;
+	padding:20px;
+	box-sizing:border-box;
+	font-size:16px;
+	line-height:35px;
+}
+.zs>p,.zs>h4{
+	margin-left:35px;
+}
+.zs>p{
+	padding:0px 20px;
+	
+}
+#bottom select{
+	width:200px;
+	height:30px;
+	text-align:center;
+	margin:10px 0px 10px 70px;
+	outline:none;
+}
+#bottom select option{
+	font-size:15px;;
+}
+/*心情札记*/
+form{
+	width:50%;
+	padding:20px;
+	line-height:40px;
+	font-size:16px;
+	box-sizing:border-box;
+}
+form p{
+	margin:10px 0px 10px 50px;
+}
+form p>span{
+	display:inline-block;
+	width:70px;
+	text-align:right;
+	margin-right:20px;
+	color:#666681
+}
+form p>input,textarea{
+	width:300px;
+	height:35px;
+	vertical-align:middle;
+	border:1px solid #DADADA;
+}
+form p input[type='radio']{
+	width:15px;
+}
+form p textarea{
+	height:100px;
+}
+form p input[type='button']{
+	padding:2px;
+	background:#F54F4F;
+	color:#fff;
+	
+}

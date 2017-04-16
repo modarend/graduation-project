@@ -1,0 +1,266 @@
+#nav li:last-child a {
+	color: #FF0700;
+	font-size: 30px;
+}
+#video {
+	position: relative;
+	margin-top:20px;
+}
+#video video {
+	width: 100%;
+}
+#video>div{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	background-color: rgba(255, 255, 255, 0.6);
+	padding: 20px;
+	margin: 0 auto;
+	border: 1px solid transparent;
+	border-radius: 10px;
+}
+#video fieldset {
+	border: 1px solid #555;
+	border-radius: 10px;
+	box-shadow: 6px 6px #aaa;
+	width: 780px;
+	margin: 0px auto;
+	padding: 15px;
+	font-weight: bold;
+}
+
+#video legend {
+	font-size: 25px;
+}
+
+#video div.form {
+	margin: 10px 0px;
+}
+
+#video div.form b {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	line-height: 30px;
+}
+
+#video div.form span {
+	display: inline-block;
+	width: 300px;
+	text-align: left;
+	line-height: 17px;
+	padding: 7px 15px;
+	border-radius: 6px;
+	color: #fff;
+	font-weight: bold;
+	background-color: #777;
+	display: none;
+}
+
+#video div.form input,#video div.form .button {
+	padding: 5px;
+	height: 20px;
+	width: 300px;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+}
+
+#video>div div.form .button{
+	height: 40px;
+	width: 312px;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	background-color: limegreen;
+	cursor: pointer;
+}
+#video #login .form a{
+	color:blue;
+}
+section{
+	overflow: hidden;
+	height:500px;
+	position:relative
+}
+section ul{
+	font-size: 16px;
+	width:250px;
+	color:#fff;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:10;
+}
+section ul li{
+	background: #ddd;
+	height:50px;
+	padding:20px 0px 0px 10px;
+	box-sizing: border-box;
+	border-bottom-right-radius: 20px;
+	border-top-right-radius: 20px;
+	margin-top:10px;
+}
+.scroll{
+	width:1200px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:5;
+	/*height:500px;*/
+}
+section>div>div{
+	box-sizing:border-box;
+	width:1200px;
+	min-height: 500px;
+	padding:20px 0px 0px 300px;
+	font-size: 20px;
+}
+div.infor{
+	height:50px;
+	border-bottom:1px dashed #DCDCDC;
+	padding-left:80px;
+	line-height:50px;
+}
+div.infor b{
+	display: inline-block;
+	width:150px;
+	text-align: right;
+}
+div.infor span{
+	display: inline-block;
+	width:600px;
+	text-align: left;
+	padding-left:20px
+}
+div.infor span em{
+	border-right: 2px solid #eee;
+	padding-right:10px;
+	margin-right: 10px;
+	font-size: 16px;
+}
+div.infor span strong{
+	font-weight: normal;
+	margin-right: 10px;
+}
+.unLogin{
+	display: inline-block;
+    width: 244px;
+    height: 40px;
+    background: #24bf95;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 10px 0px 10px 200px;
+}
+div.infor input{
+	height:30px;
+	width:300px;
+	padding:0px 10px;
+	border:1px solid #999;
+}
+div.infor button{
+	height:30px;
+	width:322px;
+	border:0px;
+}
+
+#userInfo1 select{
+	height:30px;
+	line-height:30px;
+	text-align:center;
+}
+#userInfo1 input{
+	padding: 5px;
+	height: 20px;
+	width: 300px;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	margin-left:20px;
+}
+#userInfo1 button{
+	height: 35px;
+	width: 100px;
+	line-height:35px;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	background-color: limegreen;
+	cursor: pointer;
+	margin-top:5px;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+}
+#noway{
+	width:100%;
+	text-align:center;
+	opacity: 0.5;
+	color:#AFAFAF;
+	padding:50px 0px;
+	margin-top:-20px;
+}
+#noway h2{
+	font-size:16px;
+	margin-top:20px;
+}
+table{
+	/*width:100%;*/
+	border-collapse:collapse;
+	overflow:hidden;
+}
+tr{
+	height:20px;
+	overflow:hidden;
+}
+table td{
+	border:1px solid #ddd;
+	height:20px;
+	line-height:20px;
+	font-size:15px;
+	text-align:center;
+	padding:0px;
+	
+}
+#userInfo1  td:first-child{
+	width:150px;
+}
+#userInfo1  td:nth-child(2){
+	width:80px;
+}
+#userInfo1  td:nth-child(3){
+	width:200px;
+}
+#userInfo1  td:nth-child(4){
+	width:142px;
+}
+#userInfo1  td:nth-child(5){
+	width:120px;
+}
+#userInfo1  td:nth-child(6){
+	width:100px;
+}
+#userInfo1  td:last-child{
+	width:100px;
+}
+#userInfo3 tr td:first-child{
+	width:150px;
+}
+#userInfo3 tr td:last-child{
+	width:100px;
+}
+#userInfo3 td:nth-child(2){
+	width:250px;
+}
+#userInfo3 td:nth-child(3){
+	width:378px;
+}
+#userInfo4 tr td:first-child{
+	width:150px;
+}
+#userInfo4 tr td:last-child{
+	width:100px;
+}
+#userInfo4 td:nth-child(2){
+	width:628px;
+}
